@@ -191,7 +191,7 @@ input[type="submit"]:active{
 /* Header */
 /* ---------------------------------------------------- */
 header{
-    background-image:repeating-linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)), url("/OmniFood/Resources/CSS/img/hero.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)) ,url("./img/hero.jpg");
     height:100vh;/*100% of view port*/
     background-size: cover;
     background-position: center;
@@ -212,10 +212,18 @@ header{
     float:left;
     margin-top:20px;
 }
+.logo-black
+{
+    height:50px;
+    width:auto;
+    float:left;
+    margin:5px 0;
+    display:none;
+}
 .main-nav{
  float:right;
  list-style:none ;
- margin-top:55px;
+ margin-top:18px;
 }
 .main-nav li{
     display:inline-block;
@@ -239,6 +247,24 @@ header{
 {
     border-bottom:2px solid #e67e22;
 }
+/* Sticku nav */
+.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited
+{
+    color:#555;
+    padding:16px 0;
+}
+.sticky .logo-black {display:block;}
+.sticky .logo{display:none};
+
 /* ---------------------------------------------------- */
 /* Features */
 /* ---------------------------------------------------- */
@@ -308,7 +334,7 @@ header{
 }
 .app-screen{
     width:40%;
-    height:50%;
+   
     
 }
 .app-screen{
@@ -343,7 +369,7 @@ header{
 border:0;
 }
 .btn-app img{
-    height:60px;
+    height:40px;
     width:auto;
     margin-right:10px;
 }
@@ -362,7 +388,7 @@ border:0;
 /* Testimonials */
 /* ---------------------------------------------------- */
 .section-testimonials{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,url("/OmniFood/Resources/CSS/img/back-customers.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,url("./img/back-customers.jpg");
     background-size: cover;
     color:#fff;
     background-attachment: fixed;/*image staied in the smae place but content can move */
